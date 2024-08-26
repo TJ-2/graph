@@ -755,7 +755,7 @@ dependencies = [
  "cranelift-codegen",
  "cranelift-entity",
  "cranelift-frontend",
- "itertools",
+ "itertools 0.10.5",
  "log",
  "serde",
  "smallvec",
@@ -1551,7 +1551,7 @@ dependencies = [
  "hex-literal",
  "http",
  "isatty",
- "itertools",
+ "itertools 0.13.0",
  "lazy_static",
  "maplit",
  "num-bigint",
@@ -1649,7 +1649,7 @@ dependencies = [
  "graph-runtime-wasm",
  "hex",
  "http",
- "itertools",
+ "itertools 0.13.0",
  "jsonrpc-core",
  "lazy_static",
  "prost",
@@ -1691,7 +1691,7 @@ dependencies = [
  "graph-runtime-wasm",
  "hex",
  "http",
- "itertools",
+ "itertools 0.13.0",
  "jsonrpc-core",
  "lazy_static",
  "prost",
@@ -1941,7 +1941,7 @@ dependencies = [
  "graphql-parser",
  "hex",
  "hex-literal",
- "itertools",
+ "itertools 0.13.0",
  "lazy_static",
  "lru_time_cache",
  "maybe-owned",
@@ -2457,6 +2457,15 @@ name = "itertools"
 version = "0.10.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b0fd2260e829bddf4cb6ea802289de2f86d6a7a690192fbe91b3f46e0f2c8473"
+dependencies = [
+ "either",
+]
+
+[[package]]
+name = "itertools"
+version = "0.13.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "413ee7dfc52ee1a4949ceeb7dbc8a33f2d6c088194d9f922fb8318faf1f01186"
 dependencies = [
  "either",
 ]
@@ -3376,7 +3385,7 @@ checksum = "cb5320c680de74ba083512704acb90fe00f28f79207286a848e730c45dd73ed6"
 dependencies = [
  "bytes",
  "heck 0.4.1",
- "itertools",
+ "itertools 0.10.5",
  "lazy_static",
  "log",
  "multimap",
@@ -3397,7 +3406,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "4ea9b0f8cbe5e15a8a042d030bd96668db28ecb567ec37d691971ff5731d2b1b"
 dependencies = [
  "anyhow",
- "itertools",
+ "itertools 0.10.5",
  "proc-macro2",
  "quote",
  "syn",
